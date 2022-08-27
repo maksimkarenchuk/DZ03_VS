@@ -21,7 +21,8 @@ string rast3d()
     int z2 = Convert.ToInt32(Console.ReadLine());
         
             double rast3d;
-            rast3d = Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2));
+            //rast3d = Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2));
+            rast3d = Math.Sqrt(Math.Pow(x1 - x2, 2)+ Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2));
             return ($"Длина между точками в 3D {rast3d}");
 }
 try
