@@ -5,7 +5,7 @@
 
 
 
-double rast3d()
+string rast3d()
 {
     Console.Write("Введите координату X первой точки ");
     int x1 = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,7 @@ double rast3d()
         
             double rast3d;
             rast3d = Math.Sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2)+(z1-z2)*(z1-z2));
-            Console.WriteLine ($"Длина между точками в 3D {rast3d}");
+            return ($"Длина между точками в 3D {rast3d}");
 }
 try
 {
