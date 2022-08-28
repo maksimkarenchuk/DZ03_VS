@@ -19,5 +19,12 @@ string numderskub()
             }
             return res;
  }
+ try
+{
+    Console.WriteLine(numderskub());
+}
+catch
+{
+    Console.WriteLine("Введите положительное число цифрами");
+}
  
- Console.WriteLine(numderskub());
